@@ -57,6 +57,10 @@ a { color: inherit; }
 
 /* nav */
 nav.top {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background: var(--paper);
 	border-bottom: 1px solid var(--line);
 }
 nav.top .wrap {
@@ -98,7 +102,7 @@ header.hero .wrap {
 	gap: 40px;
 	align-items: start;
 }
-header.hero .hero-tags { grid-column: 1 / -1; margin-top: 32px; }
+header.hero .hero-tags { grid-column: 1 / -1; margin-top: 32px; justify-content: center; }
 header.hero .label { color: var(--accent); }
 header.hero h1 {
 	font-family: var(--font-display);
