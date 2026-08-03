@@ -53,3 +53,5 @@ This applies to prose content. Standard, functional UI copy (button labels like 
 - Jekyll, built natively by GitHub Pages (no CI/Actions needed).
 - Custom domain: `CNAME` file in repo root (`www.juliaburmistrova.com`), custom domain set in repo Settings → Pages, HTTPS enforced. `www` is canonical; apex redirects to it.
 - DNS is managed in Squarespace's advanced/custom-records mode (domain-only, no connected Squarespace site).
+- `jburmistrova.com` and `www.jburmistrova.com` (her second, shorter domain) are set up as 301 redirects to `www.juliaburmistrova.com` via Squarespace domain forwarding, not a second GitHub Pages custom domain (GitHub Pages only supports one).
+- Analytics: GoatCounter (privacy-friendly, no cookies, country-level location only), script tag lives in `_layouts/default.html` so it's site-wide. Outbound/notable links (LinkedIn, GitHub, project links, Field Notes link) carry a `data-goatcounter-click="..."` attribute for click tracking, not just pageviews. Add the same attribute to any new outbound or notable link going forward.
