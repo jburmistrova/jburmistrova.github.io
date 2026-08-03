@@ -209,11 +209,6 @@ section.projects { padding: 20px 0 64px; }
 	text-decoration: none;
 }
 .card .view:hover { text-decoration: underline; }
-.card .status {
-	font-family: var(--font-mono);
-	font-size: 0.78rem;
-	color: var(--ink-soft);
-}
 
 /* contact */
 section.contact { border-top: 1px solid var(--line-strong); padding: 44px 0 60px; }
