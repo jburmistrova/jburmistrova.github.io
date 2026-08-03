@@ -98,6 +98,7 @@ header.hero .wrap {
 	gap: 40px;
 	align-items: start;
 }
+header.hero .hero-tags { grid-column: 1 / -1; margin-top: 32px; }
 header.hero .label { color: var(--accent); }
 header.hero h1 {
 	font-family: var(--font-display);
@@ -360,14 +361,6 @@ footer.site-footer {
 	border-top: 1px solid var(--line-strong);
 	padding: 48px 0 40px;
 }
-footer.site-footer .wrap {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	gap: 12px;
-}
-footer.site-footer .links-row a { border-color: var(--line-strong); }
 footer.site-footer .meta {
 	font-family: var(--font-mono);
 	font-size: 0.72rem;
