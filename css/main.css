@@ -332,6 +332,7 @@ section.project-detail { padding: 34px 0 90px; }
 section.project-detail figure { margin: 0 0 40px; }
 section.project-detail figure img {
 	width: 100%;
+	max-width: 560px;
 	height: auto;
 	display: block;
 	border: 1px solid var(--line);
