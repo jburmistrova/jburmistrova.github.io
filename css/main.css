@@ -176,7 +176,20 @@ section.projects { padding: 20px 0 64px; }
 	background: var(--paper-raised);
 	padding: 22px 22px 24px;
 }
-.card .label { color: var(--ochre); margin-bottom: 10px; display: block; }
+.card .label { color: var(--ochre); }
+.card-meta {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 12px;
+	margin-bottom: 10px;
+}
+.card .year {
+	font-family: var(--font-mono);
+	font-size: 0.72rem;
+	color: var(--ink-soft);
+	white-space: nowrap;
+}
 .card h3 {
 	font-family: var(--font-display);
 	font-weight: 400;
