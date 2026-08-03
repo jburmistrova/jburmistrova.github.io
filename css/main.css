@@ -8,6 +8,7 @@
 	--ochre: #a97a34;
 	--line: #c7cdbd;
 	--line-strong: #a9b19c;
+	--danger: #a8412f;
 	--font-display: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
 	--font-body: -apple-system, "Segoe UI", ui-sans-serif, system-ui, sans-serif;
 	--font-mono: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", monospace;
@@ -23,6 +24,7 @@
 		--ochre: #d1a25c;
 		--line: #2c352d;
 		--line-strong: #414d3f;
+		--danger: #d97362;
 	}
 }
 
@@ -283,6 +285,12 @@ form.contact-form button {
 	cursor: pointer;
 }
 form.contact-form button:hover { opacity: 0.88; }
+.form-error {
+	margin: 12px 0 0;
+	font-family: var(--font-mono);
+	font-size: 0.78rem;
+	color: var(--danger);
+}
 
 /* field notes gallery page */
 header.page-head { padding: 56px 0 10px; }
