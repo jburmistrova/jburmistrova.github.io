@@ -93,7 +93,7 @@ nav.top a {
 }
 nav.top a.current { color: var(--ink); border-bottom: 1px solid var(--accent); padding-bottom: 3px; }
 nav.top a:hover { color: var(--ink); }
-.ext { font-size: 0.68em; opacity: 0.6; }
+.ext { font-size: 1em; opacity: 0.7; }
 
 /* hero */
 header.hero { padding: 76px 0 56px; }
