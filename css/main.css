@@ -93,6 +93,7 @@ nav.top a {
 }
 nav.top a.current { color: var(--ink); border-bottom: 1px solid var(--accent); padding-bottom: 3px; }
 nav.top a:hover { color: var(--ink); }
+.ext { font-size: 0.68em; opacity: 0.6; }
 
 /* hero */
 header.hero { padding: 76px 0 56px; }
@@ -167,7 +168,7 @@ section.about p:last-child { margin-bottom: 0; }
 section.projects { padding: 20px 0 64px; }
 .project-grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	gap: 18px;
 }
 .card {
@@ -195,37 +196,10 @@ section.projects { padding: 20px 0 64px; }
 	text-decoration: none;
 }
 .card .view:hover { text-decoration: underline; }
-.card.full { grid-column: 1 / -1; }
 .card .status {
 	font-family: var(--font-mono);
 	font-size: 0.78rem;
 	color: var(--ink-soft);
-}
-
-/* experience log */
-section.log { padding: 10px 0 64px; }
-.log-cols {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 40px;
-}
-.log-col .label { color: var(--accent); margin-bottom: 14px; display: block; }
-.log-col ul { list-style: none; margin: 0; padding: 0; }
-.log-col li {
-	padding: 10px 0;
-	border-top: 1px solid var(--line);
-	font-size: 0.95rem;
-	color: var(--ink-soft);
-}
-.log-col li:last-child { border-bottom: 1px solid var(--line); }
-.log-col li .tag {
-	font-family: var(--font-mono);
-	font-size: 0.68rem;
-	color: var(--ink);
-	background: var(--accent-soft);
-	padding: 2px 6px;
-	margin-right: 10px;
-	letter-spacing: 0.03em;
 }
 
 /* contact */
@@ -373,7 +347,6 @@ footer.site-footer .meta {
 }
 
 @media (max-width: 620px) {
-	.project-grid, .log-cols { grid-template-columns: 1fr; }
 	nav.top .wrap { flex-direction: column; align-items: flex-start; gap: 12px; padding-top: 18px; padding-bottom: 18px; }
 	nav.top ul { flex-wrap: wrap; gap: 14px; }
 	header.hero { padding: 52px 0 40px; }

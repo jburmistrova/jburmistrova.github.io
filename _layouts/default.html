@@ -5,7 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{{ page.title }}{% unless page.title contains "Julia Burmistrova" %} · Julia Burmistrova{% endunless %}</title>
 	<meta name="description" content="{{ page.description | default: site.description }}">
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Julia Burmistrova">
+	<meta property="og:title" content="{{ page.title }}{% unless page.title contains "Julia Burmistrova" %} · Julia Burmistrova{% endunless %}">
+	<meta property="og:description" content="{{ page.description | default: site.description }}">
+	<meta property="og:image" content="{{ site.url }}/images/headshot.jpg">
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+	<meta name="twitter:card" content="summary">
 </head>
 <body>
 	<nav class="top">
@@ -17,8 +26,8 @@
 				<li><a href="/#projects" {% if page.nav == "projects" %}class="current"{% endif %}>Projects</a></li>
 				<li><a href="/field-notes/" {% if page.nav == "field-notes" %}class="current"{% endif %}>Field Notes</a></li>
 				<li><a href="/#contact" {% if page.nav == "contact" %}class="current"{% endif %}>Contact</a></li>
-				<li><a href="https://www.linkedin.com/in/juliaburmistrova/" data-goatcounter-click="linkedin-nav">LinkedIn</a></li>
-				<li><a href="https://github.com/jburmistrova" data-goatcounter-click="github-nav">GitHub</a></li>
+				<li><a href="https://www.linkedin.com/in/juliaburmistrova/" target="_blank" rel="noopener" data-goatcounter-click="linkedin-nav">LinkedIn <span class="ext" aria-hidden="true">↗</span></a></li>
+				<li><a href="https://github.com/jburmistrova" target="_blank" rel="noopener" data-goatcounter-click="github-nav">GitHub <span class="ext" aria-hidden="true">↗</span></a></li>
 			</ul>
 		</div>
 	</nav>
@@ -33,5 +42,11 @@
 
 	<script data-goatcounter="https://jburmistrova.goatcounter.com/count"
 	        async src="//gc.zgo.at/count.js"></script>
+	<script>
+	console.log(
+		"%cHey, if you're reading this in the console, let's talk data pipelines.",
+		"color: #2f6f6a; font-family: monospace; font-size: 13px;"
+	);
+	</script>
 </body>
 </html>
